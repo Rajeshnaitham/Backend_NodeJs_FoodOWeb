@@ -28,6 +28,6 @@ app.listen(PORT,()=>{
     console.log(`server started and running at ${PORT}`);
 });
 
-app.use('/',(req,res)=>{
+app.use('/apple',(req,res)=>{
     res.send("<h1> Welcome to FoodOweb<h1>");
 })

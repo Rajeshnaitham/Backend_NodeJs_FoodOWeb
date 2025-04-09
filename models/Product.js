@@ -19,7 +19,7 @@ const productSchema=new mongoose.Schema({
         type: String
     },
     bestseller:{
-        type: String
+        type: Boolean
     },
     description:{
         type: String
@@ -29,5 +29,5 @@ const productSchema=new mongoose.Schema({
         ref: 'Firm'
     }
 });
-const Product=mongoose.model('Product',productSchema);
+const Product=mongoose.model('product',productSchema);
 module.exports=Product
